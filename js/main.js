@@ -6,7 +6,7 @@ $(".list").click(function (e) {
     var data = $(this).attr("data");
     if (data == "reset") {
         Merit = 0;
-        $(".text .text_1").text("当前功德：" + Merit);
+        $(".text .text_1").text("当前文哥值：" + Merit);
     } else if (data == "about") {
         alert("by ctx")
     } else if (data == "hide") {
@@ -61,9 +61,9 @@ function Data_control(Merit_data) {
     if(Merit_data == "click") {
         Merit++;
         $.cookie("Merit", Merit, { expires: 30 })
-        $(".text .text_1").text("当前功德：" + Merit);
+        $(".text .text_1").text("当前文哥值：" + Merit);
     } else {
-        $(".text .text_1").text("当前功德：" + Merit);
+        $(".text .text_1").text("当前文哥值：" + Merit);
     }
 }
 
