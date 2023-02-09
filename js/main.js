@@ -41,7 +41,7 @@ function animation() {
 
 function animation_text() {
     var randomNum_1 = randomNum(0,100000)
-    $(".woodfish").append("<div id=\"text_tips_" +randomNum_1+ "\" class=\"text_tips\">功德+1</div>");
+    $(".woodfish").append("<div id=\"text_tips_" +randomNum_1+ "\" class=\"text_tips\">文哥值+1</div>");
     setTimeout(() => {
         $(".woodfish .text_tips").css("margin-bottom", "300px");
     }, 5);
